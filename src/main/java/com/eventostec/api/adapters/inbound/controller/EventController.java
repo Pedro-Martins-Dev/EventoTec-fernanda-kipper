@@ -1,10 +1,10 @@
-package com.eventostec.api.controller;
+package com.eventostec.api.adapters.inbound.controller;
 
 import com.eventostec.api.domain.event.Event;
 import com.eventostec.api.domain.event.EventDetailsDTO;
 import com.eventostec.api.domain.event.EventRequestDTO;
 import com.eventostec.api.domain.event.EventResponseDTO;
-import com.eventostec.api.service.EventService;
+import com.eventostec.api.application.service.EventService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -15,6 +15,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+// Vão ficar aqui pois recebem requisições externas, ou seja, as coisas estão entrando no projeto
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/event")

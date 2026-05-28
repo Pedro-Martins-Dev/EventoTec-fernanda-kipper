@@ -1,14 +1,15 @@
-package com.eventostec.api.controller;
+package com.eventostec.api.adapters.inbound.controller;
 
 import com.eventostec.api.domain.coupon.Coupon;
 import com.eventostec.api.domain.coupon.CouponRequestDTO;
-import com.eventostec.api.service.CouponService;
+import com.eventostec.api.application.service.CouponService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
+// Vão ficar aqui pois recebem requisições externas, ou seja, as coisas estão entrando no projeto
 @RestController
 @RequestMapping("/api/coupon")
 @RequiredArgsConstructor
